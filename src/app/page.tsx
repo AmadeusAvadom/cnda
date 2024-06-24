@@ -38,7 +38,7 @@ const Navbar= () => {
       </div>
     </div>
     <FloatingWhatsApp 
-      phoneNumber='+573170386862'
+      phoneNumber='+573135834253'
       accountName='Comision de derechos humanos'
       chatMessage="Hola ¿en que podriamos ayudarle?"
       statusMessage=''

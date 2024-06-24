@@ -21,3 +21,8 @@
     text-wrap: balance;
   }
 }
+
+.cnd--main {
+  background-image: url('../images/1.webp');
+  background-size: 200vh;
+}

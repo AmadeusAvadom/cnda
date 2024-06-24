@@ -1,12 +1,22 @@
 'use client'
 
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import Logo from '../images/logo.png'
+import Image from 'next/image'
 
 const Navbar= () => {
   return (
     <>
     <div>
-      <h3 className="text-[24px] bg-white p-2 text-center font-medium">Comision Nacional de Derechos Humanos</h3>
+      <div className='flex items-center text-center justify-center'>
+        <Image 
+          src={Logo}
+          alt='logo'
+          height={80}
+          width={80}
+        />
+        <h3 className="text-[24px] bg-white p-2 text-center font-medium">Comision Nacional de Derechos Humanos</h3>
+      </div>
       <div className="cnd--main text-center">
         <div className="flex-col flex font-bold">
           <span className="text-[30px] text-white">DEFENSA JUDICIALES</span>
@@ -27,7 +37,13 @@ const Navbar= () => {
         </div>
       </div>
     </div>
-    <FloatingWhatsApp phoneNumber='+573170386862' accountName='' chatMessage="Hola ¿en que podriamos ayudarle?"/>
+    <FloatingWhatsApp 
+      phoneNumber='+573170386862'
+      accountName='Comision de derechos humanos'
+      chatMessage="Hola ¿en que podriamos ayudarle?"
+      statusMessage=''
+      
+    />
     </>
   )
 }
